@@ -5,7 +5,10 @@ int main(void){
     int num;
 
     scanf("%d", &num);
-    num%2024 == 0 ? printf("Yes") : printf("No");
+    if(num <= 100000)
+        num%2024 == 0 ? printf("Yes") : printf("No");
+    else
+        printf("No");
 
     return 0;
 }
